@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--coal);
+  color: var(--charcoal);
+  font-family: 'Outfit', sans-serif;
+}
+
+body,
+html,
+#app {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header header'
+    'main main aside'
+    'footer footer footer';
+}
+
+header,
+aside,
+main,
+footer {
+  display: grid;
+  place-items: center;
+}
+
+header {
+  background: var(--pink);
+  width: 100%;
+  grid-area: header;
+  height: 100px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background: var(--purple);
+  grid-area: main;
+}
+
+aside {
+  height: 100%;
+  width: 100%;
+  background: var(--yellow);
+  grid-area: aside;
+}
+
+footer {
+  width: 100%;
+  background: var(--green);
+  grid-area: footer;
+  height: 100px;
+}
