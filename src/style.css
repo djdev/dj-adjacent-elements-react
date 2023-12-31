@@ -9,11 +9,11 @@ body {
 
 body,
 html,
-#app {
+#root {
   height: 100%;
 }
 
-.container {
+#root {
   display: grid;
   height: 100%;
   grid-template-rows: auto 1fr auto;
